@@ -1,16 +1,3 @@
-:root {
-    --navy: #172b4d;
-    --navy-light: #243e63;
-    --teal: #16877a;
-    --teal-hover: #106b61;
-    --background: #f3f6fa;
-    --surface: #ffffff;
-    --text: #202b3c;
-    --muted: #68758a;
-    --border: #dce3ec;
-    --focus: #a8dcd5;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,17 +6,18 @@
 
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    background-color: var(--background);
-    color: var(--text);
+    background-color: #f3f6fa;
+    color: #202b3c;
     line-height: 1.6;
     padding: 0 0 48px;
 }
 
+
 .form-header {
-    background-color: var(--navy);
-    color: var(--surface);
+    background-color: #172b4d;
+    color: white;
     padding: 30px 24px;
-    border-bottom: 4px solid var(--teal);
+    border-bottom: 4px solid #16877a;
 }
 
 .form-header h1 {
@@ -51,11 +39,13 @@ body {
     color: #c1cee0;
 }
 
+
 .form-container {
     max-width: 1040px;
     margin: 32px auto;
     padding: 0 24px;
 }
+
 
 .form-section {
     background-color: white;
@@ -66,21 +56,21 @@ body {
 }
 
 .form-section h2 {
-    color: var(--navy);
+    color: #172b4d;
     font-size: 19px;
     font-weight: 650;
     margin-bottom: 8px;
 }
 
 .form-section p {
-    color: var(--muted);
+    color: #68758a;
     font-size: 14px;
     margin-bottom: 18px;
 }
 
 .form-section ul {
     padding-left: 22px;
-    color: var(--muted);
+    color: #68758a;
     font-size: 14px;
 }
 
@@ -93,38 +83,42 @@ body {
     margin-bottom: 0;
 }
 
+
 label {
     display: block;
-    color: var(--text);
+    color: #202b3c;
     font-size: 14px;
     font-weight: 600;
     margin: 18px 0 7px;
 }
 
-input, select {
+input,
+select {
     display: block;
     width: 100%;
     max-width: 560px;
     min-height: 44px;
     padding: 10px 12px;
-    background-color: var(--surface);
-    color: var(--text);
+    background-color: white;
+    color: #202b3c;
     font-family: inherit;
     font-size: 14px;
     border: 1px solid #cbd5e1;
     border-radius: 6px;
-    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-input:hover, select:hover {
+input:hover,
+select:hover {
     border-color: #9aaabe;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     outline: none;
-    border-color: var(--teal);
-    box-shadow: 0 0 0 3px var(--focus);
+    border-color: #16877a;
+    box-shadow: 0 0 0 3px #a8dcd5;
 }
+
 
 #vacOptions,
 #secOptions,
@@ -134,6 +128,7 @@ input:focus, select:focus {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
 }
+
 
 #vacOptions label,
 #secOptions label,
@@ -169,6 +164,7 @@ input:focus, select:focus {
     accent-color: #16877a;
     flex-shrink: 0;
 }
+
 
 button[type="submit"] {
     padding: 12px 24px;
