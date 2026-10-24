@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.G.D.A.V. College - Subject Selection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="form-container">
+        <header class="form-header">
+            <h1>P.G.D.A.V. College (Morning)</h1>
+            <h2>Subject Selection - Semester I</h2>
+            <p>Form for selection of SEC, VAC, GE and AEC</p>
+        </header>
+
+        <section class="form-section">
+            <h2>Instructions</h2>
+            <p>
+                Please read the following instructions carefully before selecting your subjects.
+            </p>
+
+            <ul>
+                <li>
+                    SEC and VAC subjects should not be the same as or similar to any core paper.
+                </li>
+                <li>
+                    GE should not be from your parent department.
+                </li>
+                <li>
+                    An Honours student selecting seven GEs from another discipline may establish that discipline as
+                    their Minor, subject to the applicable academic rules.
+                </li>
+            </ul>
+        </section>
+
+        <form id="subjectForm">
+
+
+            <section class="form-section">
+                <h2>Student Information</h2>
+
+                <label for="fullName">
+                    Full Name
+                </label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="fatherName">
+                    Father's Name
+                </label>
+                <input type="text" id="fatherName" name="fatherName" required>
+
+                <label for="csasNumber">
+                    CSAS Registration Form Number
+                </label>
+                <input type="text" id="csasNumber" name="csasNumber" required>
+
+                <label for="mobile">
+                    Mobile Number
+                </label>
+                <input type="tel" id="mobile" name="mobile" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required>
+
+                <label for="course">
+                    Course
+                </label>
+                <select id="course" name="course" required>
+                    <option value="" default>
+                        Select your course
+                    </option>
+                    <option value="ba-prog">
+                        B.A. (Programme)
+                    </option>
+                    <option value="bcom-prog">
+                        B.Com. (Programme)
+                    </option>
+                    <option value="bcom-hons">
+                        B.Com. (Honours)
+                    </option>
+                    <option value="ba-economics">
+                        B.A. (Honours) Economics
+                    </option>
+                    <option value="ba-english">
+                        B.A. (Honours) English
+                    </option>
+                    <option value="ba-hindi">
+                        B.A. (Honours) Hindi
+                    </option>
+                    <option value="ba-history">
+                        B.A. (Honours) History
+                    </option>
+                    <option value="ba-sanskrit">
+                        B.A. (Honours) Sanskrit
+                    </option>
+                    <option value="ba-political-science">
+                        B.A. (Honours) Political Science
+                    </option>
+                    <option value="bsc-mathematics">
+                        B.Sc. (Honours) Mathematics
+                    </option>
+                    <option value="bsc-statistics">
+                        B.Sc. (Honours) Statistics
+                    </option>
+                    <option value="bsc-computer-science">
+                        B.Sc. (Honours) Computer Science
+                    </option>
+                    <option value="bsc-mathematical-science">
+                        B.Sc. Mathematical Science (Programme)
+                    </option>
+                </select>
+            </section>
+
+
+            <section class="form-section">
+                <h2>Value Addition Course (VAC)</h2>
+                <p>Select your preferred VAC subject.</p>
+
+                <div id="vacOptions">
+
+                    <!-- VAC options will be added here -->
+
+                </div>
+
+            </section>
+
+
+            <section class="form-section">
+                <h2>Skill Enhancement Course (SEC)</h2>
+                <p>Choose any one SEC.</p>
+
+                <div id="secOptions">
+
+                    <!-- SEC options will be added here -->
+
+                </div>
+
+            </section>
+
+
+            <section class="form-section">
+                <h2>Generic Elective (GE)</h2>
+                <p>
+                    Applicable to eligible courses, excluding B.A. (Programme) and B.Com. (Programme), as specified in
+                    the college form.</p>
+
+                <div id="geOptions">
+
+                    <!-- GE options will be added here -->
+
+                </div>
+
+            </section>
+
+
+            <section class="form-section">
+                <h2>Ability Enhancement Course (AEC)</h2>
+                <p>
+                    Applicable to eligible courses, excluding B.A. (Programme), B.Com. (Programme), and B.Com.
+                    (Honours).
+                </p>
+
+                <div id="aecOptions">
+
+                    <!-- AEC options will be added here -->
+
+                </div>
+
+            </section>
+
+
+            <section class="form-section">
+                <button type="submit">
+                    Submit Form
+                </button>
+                <p id="formMessage" role="status"></p>
+
+            </section>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
